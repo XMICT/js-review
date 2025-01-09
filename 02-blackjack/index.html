@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego Blackjack">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="title p-3">
+        <h1>Blackjack</h1>
+    </header>
+    <main>
+        <section class="row mt-3 ">
+            <div id="menu-buttons" class="col text-center">
+                <button id="btn-new" class="btn btn-danger">Nuevo Juego</button>
+                <button id="btn-order" class="btn btn-primary">Pedir Carta</button>
+                <button id="btn-stop" class="btn btn-primary">Detener</button>
+            </div>
+        </section>
+    
+        <section class="row container mt-4">
+            <div class="col">
+                <h2>Player 1 - <small>0</small></h2>
+                <div id="player-cards" class="box-cards">
+                </div>
+            </div>
+        </section>
+
+        <section class="row container mt-4">
+            <div class="col">
+                <h2>Computer - <small>0</small></h2>
+                <div id="computer-cards" class="box-cards">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/juego-min.js"></script>
+    <script>
+        document.querySelector('#btn-new').addEventListener('click', () => {
+            console.log('hi');
+            miModulo.newGame();
+        })
+    </script>
+</body>
+</html>
